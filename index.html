@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Modal Box</title>
+</head>
+<body>
+    <!--Main Page-->
+    <button id="myBtn">Contact Us</button>
+
+    <!--The modal-->
+    <div id="myModal" class="modal">
+    
+    <!--Modal content-->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!--&times; means character "x"-->
+            <form action="">
+                <h1>Contact Us</h1>
+                <hr>
+                <!-- <label for="name" - provides usability improvement - click on text, toggles control
+                for="" equals to id="" of child element </label> -->
+                <input id="fullname" type="text" name="fullname" placeholder="Name" required></span><br>
+                <input id="email" type="email" name="email" placeholder="Email" required><br>
+                <textarea  id="message" type="text" placeholder="Message" rows="4" required></textarea><br>
+                <button type="submit">Send message</button>
+                <!--OR <input type="submit" value="Send"> -->
+            </form>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
